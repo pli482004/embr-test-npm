@@ -1,6 +1,6 @@
 platform: nodejs
 platformVersion: "22"
-buildCommand: "node -v && npm run build"
+buildCommand: "npm run build"
 autoDeploy: true
 
 static:
