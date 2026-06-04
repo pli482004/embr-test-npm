@@ -1,6 +1,6 @@
 platform: nodejs
 platformVersion: "20"
-buildCommand: "export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH && npm run build"
+buildCommand: "ls && export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH && npm run build"
 autoDeploy: true
 
 static:
