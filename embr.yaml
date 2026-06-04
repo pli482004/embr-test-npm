@@ -1,8 +1,12 @@
 platform: nodejs
 platformVersion: "22"
-buildCommand: "npm run build"
+buildCommand: "npm install"
 autoDeploy: true
 
+run:
+  port: 3000
+  startCommand: "npm start"
+  
 static:
   directories:
     - build
