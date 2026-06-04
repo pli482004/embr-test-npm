@@ -1,0 +1,11 @@
+platform: nodejs
+platformVersion: "20"
+buildCommand: "export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH && npm run build"
+autoDeploy: true
+
+static:
+  directories:
+    - build
+  spaFallback: true
+  headers:
+    "*.js": "public, max-age=31536000, immutable"
