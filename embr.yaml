@@ -1,6 +1,6 @@
-platform: nodejs
+platform: node
 platformVersion: "20"
-buildCommand: "ls /usr/local/lib/node_modules && which npm && npm run build"
+buildCommand: "npm run build"
 autoDeploy: true
 
 static:
